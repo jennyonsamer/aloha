@@ -2,18 +2,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta always comes before title -->
     <title>Aloha Apparel Co.</title>
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <nav>
-      <img class="logo" src="images/aloha-logo.svg" alt="Logo">
-      <a href= "" >ABOUT</a>
-      <a href= "" >SHOP</a>
-      <a href= "" >FEATURED</a>
-      <a href= "" >UPDATES</a>
-      <img class="cart" src="images/cart-icon.svg" alt="Cart">
+    <nav class="nav">
+      <ul class="nav">
+        <li><img src="images/aloha-logo.svg" alt="logo"><a href= "" class="logo" ></li>
+        <li><img src="images/cart-icon.svg" alt="cart"><a href= "" class="cart" ></li>
+        <li><a href= "" class="link" >ABOUT</a></li>
+        <li><a href= "" class="link">SHOP</a></li>
+        <li><a href= "" class="link">FEATURED</a></li>
+        <li><a href= "" class="link">UPDATES</a></li>
+      </ul>
     </nav>
 
     <section class="banner">
@@ -24,8 +28,29 @@
     <section class="banner2">
     <h2>Hand-Crafted <span class="bold">Styles</span></h2> 
 
-    <p class="Aloha">Aloha apparel only sells the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+    <p class="aloha">Aloha apparel only sells the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
 
+    <section class="item-container">
+      <ul>
+        <li class="mens">
+          Men's
+        </li>
+        <li class="trends">
+          Trends
+        </li>
+        <li class="glasses">
+          Glasses
+        </li>
+        <li class="sale">
+          Sale
+        </li>
+        <li class="bags">
+          Bags
+        </li>
+        <li class="womens">
+          Women's
+        </li>
+      </ul>
     </section>
     <h2>Most Loved <span class="bold">Products</span></h2>
     <ul>
@@ -57,24 +82,35 @@
     </ul>
     <footer class= "footer">
     <h2>Sign-up for <span class= "bold">Updates</span></h2>
-    <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any <br><br>
-    © 2017 Aloha Apparel Co.<br><br>
+    <p class="">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any
+      <input type="email" name="email-address">
+      <button name="submit">
+          Subscribe
+        </button>
+      </footer>
+    © 2017 Aloha Apparel Co.<br>
     Powered by HTML and CSS.<br><br>
     (604) 604-6040. <a href= "mailto:info@apparel.com">info@alohaapparel.com</a><br><br>
-    1490 W Broadway <br><br>
-    Vancouver, BC, Canada <br><br>
+    1490 W Broadway <br>
+    Vancouver, BC, Canada
     </p>
-  </footer>
     <p>
-<ul class="media-container">
-  <li class="media">
+<ul class="social-container">
+    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+  <li class="social">
     facebook
   </li>
-  <li class="media">
+  <li class="social">
     twitter
     </li>
-    <li class="media">
+    <li class="social">
       instagram
+    </li>
+    <li class="social">
+      pinterest
+    </li>
+    <li class="social">
+      google plus
     </li>
 </ul>
     </p>
