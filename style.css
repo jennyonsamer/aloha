@@ -172,12 +172,20 @@ html {
 nav {
   font-family: 'raleway';
   background-color: white;
-  margin: 0 auto;
+  
   position: relative;
+  width: 50%;
+  
 }
-
+.nav-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
 header {
-  padding: 10% 30%;
+  padding: 1% 4%;
 }
 
 .logo {
@@ -217,7 +225,7 @@ header {
 
 .banner {
   background: 
-  url('images/banner-girl.png') no-repeat center 5rem,
+  url('images/banner-girl.png') no-repeat center/70%,
   url('images/flower-bkgd.jpg') repeat;
   background-size: contain;
   height: 35rem;
@@ -332,20 +340,32 @@ button {
 
 /* flexbox area */
 
-.nav {
+header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-self: center;
 }
 
+.nav-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+/* .item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
 .logo {
-  order:1;
+  
 }
 
 .cart {
-  order:5;
+  
 }
 
 .link {
@@ -367,11 +387,7 @@ order: 2;
   
 }
 
-.item-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 
 /* media queries */
 
