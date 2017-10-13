@@ -165,6 +165,10 @@ table {
 
 /*! styling starts here */
 
+html {
+  font-size: 16px;
+}
+
 nav {
   font-family: 'raleway';
   background-color: white;
@@ -172,15 +176,16 @@ nav {
   position: relative;
 }
 
+header {
+  padding: 10% 30%;
+}
+
 .logo {
-  height: 100px;
-  width: 100px;
-  position: relative;
+  height: 70px;
 }
 
 .cart {
-  height: 100px;
-  width: 100px;
+  height: 70px;
 
 }
 
@@ -212,10 +217,10 @@ nav {
 
 .banner {
   background: 
-  url('images/banner-girl.png') no-repeat center 7rem/50rem,
+  url('images/banner-girl.png') no-repeat center 5rem,
   url('images/flower-bkgd.jpg') repeat;
-  background-size: auto;
-  height: 550px;
+  background-size: contain;
+  height: 35rem;
   opacity: 0.7;
   
 }
@@ -244,12 +249,58 @@ h2 {
   
 }
 
+.item-container{
+font-family: 'raleway';
+text-align: center;
+color: white;
+}
 
+.mens {
+background: url(images/mens-category.jpg);
+height: 30vw;
+width: 30vw;
+}
+
+.trends {
+  background: url(images/bags-category.jpg);
+  height: 30vw;
+  width: 30vw;
+}
+
+.glasses {
+background: url(images/glasses-category.jpg);
+height: 30vw;
+width: 30vw;
+}
+
+.sale {
+  background: url(images/sale-category.jpg);
+  height: 30vw;
+  width: 30vw;
+}
+
+.bags {
+  background: url(images/bags-category.jpg);
+  height: 30vw;
+  width: 30vw;
+}
+
+.womens {
+background: url(images/womens-category.jpg);
+height: 30vw;
+width: 30vw;
+}
 
 .footer {
   background: url(images/wave-bkgd.jpg);
   height: 350px;
   background-position: bottom;
+  font-family: 'raleway';
+  text-align: center;
+}
+
+button {
+  background: ;
 }
 
 .social-container{
@@ -285,6 +336,8 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: center;
 }
 
 .logo {
@@ -296,8 +349,8 @@ h2 {
 }
 
 .link {
-  display: flex;
-justify-content: space-around;
+  
+
 }
 
 .link:nth-child(1) {
@@ -314,17 +367,24 @@ order: 2;
   
 }
 
+.item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 /* media queries */
 
 @media screen and (max-width: 600px){
  
   .banner {
+
     background: 
-    url('images/banner-girl.png') no-repeat center 9rem/50rem,
+    url('images/banner-girl.png') no-repeat center 1rem/50rem,
     url('images/flower-bkgd.jpg') repeat;
     background-size: auto;
     height: 550px;
     opacity: 0.7;
-    
+
   }
 }

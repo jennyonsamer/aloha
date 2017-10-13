@@ -7,18 +7,21 @@
     <!-- meta always comes before title -->
     <title>Aloha Apparel Co.</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
-  <body>
-    <nav class="nav">
-      <ul class="nav">
-        <li><img src="images/aloha-logo.svg" alt="logo"><a href= "" class="logo" ></li>
-        <li><img src="images/cart-icon.svg" alt="cart"><a href= "" class="cart" ></li>
-        <li><a href= "" class="link" >ABOUT</a></li>
-        <li><a href= "" class="link">SHOP</a></li>
-        <li><a href= "" class="link">FEATURED</a></li>
-        <li><a href= "" class="link">UPDATES</a></li>
-      </ul>
-    </nav>
+  <body> 
+<header class="item-container">
+  <div><img src="images/aloha-logo.svg" alt="logo" class="logo"><a href=""></a></div>
+  <nav>
+    <ul class="item-container">
+      <li><a href= "" class="link" >ABOUT</a></li>
+      <li><a href= "" class="link">SHOP</a></li>
+      <li><a href= "" class="link">FEATURED</a></li>
+      <li><a href= "" class="link">UPDATES</a></li>
+    </ul>
+  </nav>
+  <div><img src="images/cart-icon.svg" alt="cart" class="cart"><a href=""></a></div>
+</header>
 
     <section class="banner">
       <p class="new">New Collection</p>
@@ -30,8 +33,10 @@
 
     <p class="aloha">Aloha apparel only sells the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
 
+    </section>
+
     <section class="item-container">
-      <ul>
+      <ul class="item-container">
         <li class="mens">
           Men's
         </li>
@@ -83,10 +88,14 @@
     <footer class= "footer">
     <h2>Sign-up for <span class= "bold">Updates</span></h2>
     <p class="">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any
-      <input type="email" name="email-address">
+
+      <form>
+      <input type="email" name="email-address" placeholder="Your Email">
       <button name="submit">
           Subscribe
         </button>
+      </form>
+
       </footer>
     © 2017 Aloha Apparel Co.<br>
     Powered by HTML and CSS.<br><br>
@@ -114,6 +123,6 @@
     </li>
 </ul>
     </p>
-    
+    <script src="script.js"></script>
   </body>
 </html> 
