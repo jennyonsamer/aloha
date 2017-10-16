@@ -1,1 +1,8 @@
-console.log ()
+
+
+
+$('.main-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  contain: true
+});
