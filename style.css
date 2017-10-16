@@ -226,6 +226,7 @@
     font-size: 100%;
     position: relative;
     top: 250px;
+
   }
 
   .season {
@@ -245,11 +246,10 @@
     background-image: 
     url('images/banner-girl.png'),
     url('images/flower-bkgd.jpg');
-    background-size: 35% auto, cover;
+    background-size: auto 95% , cover;
     background-repeat: no-repeat, no-repeat;
     background-position: center 60px, center;
-    height: 25rem;
-    opacity: 0.7;
+    height: 30rem;
     
   }
 
@@ -345,17 +345,26 @@
   height: 30vw;
   width: 100%;
   }
+/* EMAIL */
 
-
-/*  FOOT STUFF  */
-.footer {
+.emailsection {
   background: url(images/wave-bkgd.jpg);
   height: 350px;
   background-position: bottom;
   font-family: 'raleway';
   text-align: center;
+  
 }
 
+/*  FOOTER  */
+
+footer {
+  font-family: 'playfair', sans-serif;
+  text-align: center;
+  background-color: #242424;
+  color: #FFF;
+  border-top: 9px solid white;
+}
 button {
   background: ;
 }
@@ -442,14 +451,25 @@ order: 2;
     align-self: center;
   }
 
+  nav {
+  border-top: none;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .cart {
+    order: 3;
+    height: 60px;
+  }
   
 
   .banner {
 
-    background: 
-    url('images/banner-girl.png') no-repeat center 1rem/50rem,
-    url('images/flower-bkgd.jpg') repeat;
-    background-size: contain;
+    background-size: auto 95% , cover;
     height: 700px;
   }
 }
