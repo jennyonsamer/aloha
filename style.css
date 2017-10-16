@@ -2,303 +2,352 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/*  RESET STUFF  */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 
 /*! Fonts! */
-@font-face {
-  font-family: 'playfair';
-  src: url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.eot');
-  src: url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
-  font-weight: bold;
-  font-style: italic;
+  @font-face {
+    font-family: 'playfair';
+    src: url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.eot');
+    src: url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
 
-}
-
-
-
-
-@font-face {
-  font-family: 'playfair';
-  src: url('fonts/more-fonts/playfairdisplay-italic-webfont.eot');
-  src: url('fonts/more-fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-
-}
-
-@font-face {
-  font-family: 'playfair';
-  src: url('fonts/more-fonts/playfairdisplay-regular-webfont.eot');
-  src: url('fonts/more-fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
+  }
 
 
 
 
-@font-face {
-  font-family: 'playfair';
-  src: url('fonts/more-fonts/playfairdisplay-bold-webfont.eot');
-  src: url('fonts/more-fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
-  font-weight: bold;
-  font-style: normal;
+  @font-face {
+    font-family: 'playfair';
+    src: url('fonts/more-fonts/playfairdisplay-italic-webfont.eot');
+    src: url('fonts/more-fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
 
-}
+  }
 
+  @font-face {
+    font-family: 'playfair';
+    src: url('fonts/more-fonts/playfairdisplay-regular-webfont.eot');
+    src: url('fonts/more-fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-
-
-@font-face {
-  font-family: 'raleway';
-  src: url('fonts/more-fonts/raleway-light-webfont.eot');
-  src: url('fonts/more-fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/raleway-light-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/raleway-light-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
-  font-weight: 300;
-  font-style: normal;
-
-}
+  }
 
 
 
 
-@font-face {
-  font-family: 'raleway';
-  src: url('fonts/more-fonts/raleway-lightitalic-webfont.eot');
-  src: url('fonts/more-fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
-  font-weight: 300;
-  font-style: italic;
+  @font-face {
+    font-family: 'playfair';
+    src: url('fonts/more-fonts/playfairdisplay-bold-webfont.eot');
+    src: url('fonts/more-fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 
-}
-
-
-
-
-@font-face {
-  font-family: 'raleway';
-  src: url('fonts/more-fonts/raleway-medium-webfont.eot');
-  src: url('fonts/more-fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/raleway-medium-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/raleway-medium-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-
-}
+  }
 
 
 
 
-@font-face {
-  font-family: 'raleway';
-  src: url('fonts/more-fonts/raleway-mediumitalic-webfont.eot');
-  src: url('fonts/more-fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts/more-fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
-       url('fonts/more-fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
-       url('fonts/more-fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
-  font-weight: 500;
-  font-style: italic;
+  @font-face {
+    font-family: 'raleway';
+    src: url('fonts/more-fonts/raleway-light-webfont.eot');
+    src: url('fonts/more-fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/raleway-light-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/raleway-light-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: 300;
+    font-style: normal;
 
-}
+  }
+
+
+
+
+  @font-face {
+    font-family: 'raleway';
+    src: url('fonts/more-fonts/raleway-lightitalic-webfont.eot');
+    src: url('fonts/more-fonts/raleway-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/raleway-lightitalic-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/raleway-lightitalic-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/raleway-lightitalic-webfont.svg#ralewaylight_italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+
+  }
+
+
+
+
+  @font-face {
+    font-family: 'raleway';
+    src: url('fonts/more-fonts/raleway-medium-webfont.eot');
+    src: url('fonts/more-fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/raleway-medium-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/raleway-medium-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+
+  }
+
+
+
+
+  @font-face {
+    font-family: 'raleway';
+    src: url('fonts/more-fonts/raleway-mediumitalic-webfont.eot');
+    src: url('fonts/more-fonts/raleway-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/more-fonts/raleway-mediumitalic-webfont.woff2') format('woff2'),
+        url('fonts/more-fonts/raleway-mediumitalic-webfont.ttf') format('truetype'),
+        url('fonts/more-fonts/raleway-mediumitalic-webfont.svg#ralewaymedium_italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+
+  }
 
 
 /*! styling starts here */
+/* HEADER */
 
-html {
-  font-size: 16px;
-}
+  html {
+    font-size: 14px;
+  }
 
-nav {
-  font-family: 'raleway';
-  background-color: white;
-  
-  position: relative;
-  width: 50%;
-  
-}
-.nav-container{
+  nav {
+    font-family: 'raleway', sans-serif;
+    background-color: white;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-header {
-  padding: 1% 4%;
-}
-
-.logo {
-  height: 70px;
-}
-
-.cart {
-  height: 70px;
-
-}
-
-.link {
-  color: #e2574c;
-  text-decoration: none;
-}
-
-.new {
-  color: white;
-  text-align: center;
-  text-transform:uppercase;
-  font-family: 'raleway';
-  font-size: 150%;
-  position: relative;
-  top: 250px;
-}
-
-.season {
-  color: white;
-  font-family: 'playfair';
-  text-align: center ;
-  font-size: 500%;
-  font-style: 'normal';
-  font-weight: 'normal';
-  position: relative;
-  top: 250px;
-}
-
-.banner {
-  background: 
-  url('images/banner-girl.png') no-repeat center/70%,
-  url('images/flower-bkgd.jpg') repeat;
-  background-size: contain;
-  height: 35rem;
-  opacity: 0.7;
+    width: 100%;
+    order: 1;
+    border-top: 1px solid #d7d7d7;
+    padding-top: 1rem;
+    margin-top: 1rem;
   
-}
-
-.banner2 {
-  padding: 5rem 5rem 5rem 5rem;
-}
-
-h2 {
-  text-align: center;
-  font-size: 40px;
-  font-family: 'playfair';
-  font-style: italic;
-}
-
-.bold {
-  font-family: 'playfair';
-  font-style: normal;
-  font-weight: bold;
-}
-
-.aloha {
-  font-family: 'raleway';
-  text-align: center;
-  position: relative;
+    
+  }
   
-}
+  .nav-container{
+    align-self: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
 
-.item-container{
-font-family: 'raleway';
-text-align: center;
-color: white;
-}
+  header {
+    padding: 4% 3%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-self: center;
+    
+  }
 
-.mens {
-background: url(images/mens-category.jpg);
-height: 30vw;
-width: 30vw;
-}
 
-.trends {
-  background: url(images/bags-category.jpg);
+
+  .logo {
+    height: 50px;
+  }
+
+  .cart {
+    height: 50px;
+
+  }
+
+  .link {
+    color: #e2574c;
+    text-decoration: none;
+  }
+
+/* HERO IMAGE  */
+
+  .new {
+    color: white;
+    text-align: center;
+    text-transform:uppercase;
+    font-family: 'raleway', sans-serif;
+    font-size: 100%;
+    position: relative;
+    top: 250px;
+  }
+
+  .season {
+    color: white;
+    font-family: 'playfair', serif;
+    text-align: center ;
+    font-size: 300%;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+    top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .banner {
+    background-image: 
+    url('images/banner-girl.png'),
+    url('images/flower-bkgd.jpg');
+    background-size: 35% auto, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 60px, center;
+    height: 25rem;
+    opacity: 0.7;
+    
+  }
+
+/* INTRO */
+
+  .banner2 {
+    padding: 5rem 5rem 5rem 5rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'playfair', serif;
+    font-style: italic;
+  }
+
+  .bold {
+    font-family: 'playfair', serif;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .aloha {
+    font-family: 'raleway', sans-serif;
+    text-align: center;
+    position: relative;
+    
+  }
+
+/* GALLERY   */
+  .item-container{
+  font-family: 'raleway', sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self:center;
+  width: 100%;
+  }
+  .iten-container li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .mens {
+    position: relative;
+
+  background: url(images/mens-category.jpg);
+  background-position: center;
+  background-size: cover;
   height: 30vw;
-  width: 30vw;
-}
+  width: 100%;
+  }
 
-.glasses {
-background: url(images/glasses-category.jpg);
-height: 30vw;
-width: 30vw;
-}
+  .trends {
+    background: url(images/trends-category.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    width: 50%;
+  }
 
-.sale {
-  background: url(images/sale-category.jpg);
+  .glasses {
+  background: url(images/glasses-category.jpg);
+  background-position: center;
+  background-size: cover;
   height: 30vw;
-  width: 30vw;
-}
+  width: 50%;
+  }
 
-.bags {
-  background: url(images/bags-category.jpg);
+  .sale {
+    background: url(images/sale-category.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    width: 50%;
+  }
+
+  .bags {
+    background: url(images/bags-category.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+    width: 50%;
+  }
+
+  .womens {
+  background: url(images/womens-category.jpg);
+  background-position: center;
+  background-size: cover;
   height: 30vw;
-  width: 30vw;
-}
+  width: 100%;
+  }
 
-.womens {
-background: url(images/womens-category.jpg);
-height: 30vw;
-width: 30vw;
-}
 
+/*  FOOT STUFF  */
 .footer {
   background: url(images/wave-bkgd.jpg);
   height: 350px;
@@ -340,12 +389,6 @@ button {
 
 /* flexbox area */
 
-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-self: center;
-}
 
 .nav-container {
   display: flex;
@@ -353,12 +396,6 @@ header {
   justify-content: space-around;
 }
 
-/* .item-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
 
 .logo {
   
@@ -391,16 +428,43 @@ order: 2;
 
 /* media queries */
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
  
+  html {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 1% 3%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  
+
   .banner {
 
     background: 
     url('images/banner-girl.png') no-repeat center 1rem/50rem,
     url('images/flower-bkgd.jpg') repeat;
-    background-size: auto;
-    height: 550px;
-    opacity: 0.7;
-
+    background-size: contain;
+    height: 700px;
   }
 }
+
+@media screen and (min-width: 1240px){
+
+  .nav-container {
+    flex-wrap: nowrap;
+  }
+.new{
+  top: 250px;
+}
+  .logo {
+    height: 70px;
+  }
+}
+  
+
