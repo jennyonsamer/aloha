@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="style.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.10/flickity.pkgd.min.js"></script>    
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.10/flickity.pkgd.min.js"></script>
+
+
 </head>
 
 <body>
@@ -67,35 +67,36 @@
       </li>
     </ul>
   </section>
-  <h2>Most Loved <span class="bold">Products</span></h2>
-  <ul class="main-carousel">
+  <section class="products">
+    <h2>Most Loved <span class="bold">Products</span></h2>
+    <ul class="main-carousel">
 
-    <li class="carousel-cell">
-      <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress"><br><br> Dresses
-      <h4>Stretch Knit Dress</h4>
-      $169.00
-    </li>
-    <li class="carousel-cell">
-      <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt"><br><br> Shirts
-      <h4>Cotton Blue Shirt</h4>
-      $89.00
-    </li>
-    <li class="carousel-cell">
-      <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress"><br><br> Dresses
-      <h4>Checked Stretch Dress</h4>
-      $129.00
-    </li>
-    <li class="carousel-cell">
-      <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack"><br><br> Bags
-      <h4>Blue Hipster Backpack</h4>
-      $69.00
-    </li>
-  </ul>
+      <li class="carousel-cell">
+        <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress"><br><br> Dresses
+        <h4>Stretch Knit Dress</h4>
+        $169.00
+      </li>
+      <li class="carousel-cell">
+        <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt"><br><br> Shirts
+        <h4>Cotton Blue Shirt</h4>
+        $89.00
+      </li>
+      <li class="carousel-cell">
+        <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress"><br><br> Dresses
+        <h4>Checked Stretch Dress</h4>
+        $129.00
+      </li>
+      <li class="carousel-cell">
+        <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack"><br><br> Bags
+        <h4>Blue Hipster Backpack</h4>
+        $69.00
+      </li>
+    </ul>
+  </section>
   <section class="emailsection">
-    <h2>Sign-up for <span class="bold">Updates</span></h2>
-    <p class="">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
-      our blog. Unsubscribe at any
-
+    <h2 class="signup">Sign-up for<span class="bold"> Updates</span></h2>
+    <p class="stayupdated">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
+      our blog. Unsubscribe at any time.
       <form>
         <input type="email" name="email-address" placeholder="Your Email">
         <button name="submit">
@@ -105,32 +106,45 @@
   </section>
   <footer>
     <p>
-      © 2017 Aloha Apparel Co.<br> Powered by HTML and CSS.<br><br> (604) 604-6040. <a href="mailto:info@apparel.com">info@alohaapparel.com</a><br><br>      1490 W Broadway <br> Vancouver, BC, Canada
+      © 2017 Aloha Apparel Co.<br> Powered by HTML and CSS.
+    </p>
+    <p class="phoneinfo">(604) 604-6040. <a href="mailto:info@apparel.com" class="emailinfo">info@alohaapparel.com</a>
+    </p>
+    <p class="addressinfo">1490 W Broadway <br> Vancouver, BC, Canada
     </p>
     <ul class="social-container">
       <li>
         <a href="" class="social-icon"> 
             <i class="fa fa-facebook" aria-hidden="true"></i>
-            facebook
+           <span class="hide"> facebook </span>
         </a>
-
-      </li>
-
-      <li class="social">
-        twitter
       </li>
       <li class="social">
-        instagram
+        <a href="" class="social-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i> <span class="hide">twitter</span>
+        </a>
       </li>
       <li class="social">
-        pinterest
+        <a href="" class="social-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i> <span class="hide">instagram</span>
+        </a>
       </li>
       <li class="social">
-        google plus
+        <a href="" class="social-icon">
+              <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+          <span class="hide">pinterest</span>
+        </a>
+      </li>
+      <li class="social">
+        <a href="" class="social-icon">
+          <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+              <span class="hide">
+            google plus</span>
+        </a>
       </li>
     </ul>
 
-   
+
     <script src="script.js"></script>
   </footer>
 </body>
