@@ -588,33 +588,47 @@ button {
     background-size: auto 95%, cover;
     height: 700px;
   }
+  .new{
+    top: 246px;
+    font-size: 183%;
+  }
+  .season {
+    top: 269px;
+    font-size: 435%;
+  }
   .mens {
+    height: 25vw;
     width: 50%;
     border-right: 10px solid white;
   }
   .trends {
+    height: 25vw;
     width: 25%;
     border-right: 5px solid;
     border-bottom: 5px solid;
   }
   .glasses{
+    height: 25vw;
   width: 25%;
   border-right: 5px solid;
   border-bottom: 5px solid;
   }
   .sale{
+    height: 25vw;
     width: 25%;
     border-right: 5px solid;
     border-top: 5px solid;
     border-bottom: 5px solid;
   }
   .bags {
+    height: 25vw;
     width: 25%;
     border-right: 5px solid;
     border-top: 5px solid;
     border-bottom: 5px solid;
   }
   .womens{
+    height: 25vw;
     width: 50%;
     border-right: 5px solid;
     border-top: 5px solid;
@@ -645,6 +659,24 @@ button {
   .logo {
     height: 70px;
   }
+.mens{
+  height: 25vw;
+}
+ .trends {
+  height: 25vw;
+ }
+ .glasses {
+  height: 25vw;
+ } 
+ .sale{
+  height: 25vw;
+ }
+ .bags {
+  height: 25vw;
+ } 
+ .womens {
+  height: 25vw;
+ }
   footer {
     display: flex;
     justify-content: space-between;
