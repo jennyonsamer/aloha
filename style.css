@@ -654,7 +654,13 @@ button {
     flex-wrap: nowrap;
   }
   .new {
-    top: 250px;
+      top: 246px;
+      font-size: 183%;
+    }
+    .season {
+      top: 269px;
+      font-size: 435%;
+    }
   }
   .logo {
     height: 70px;
