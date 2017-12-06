@@ -334,6 +334,7 @@
   .item-container {
     font-family: 'raleway', sans-serif;
     text-align: center;
+    text-transform: uppercase;
     color: white;
     display: flex;
     flex-flow: row wrap;
@@ -539,6 +540,9 @@
     padding: 5rem 2rem;
   }
 
+  .addressinfo {
+    color: #919191;
+  }
 
   .social-container {
     display: flex;
@@ -607,6 +611,10 @@
       top: 180px;
       font-size: 370%;
     }
+    h2 {
+      font-size: 3rem;
+    }
+
     ul.item-container{
       display: flex;
       justify-content: center;
@@ -650,6 +658,11 @@
       border-top: 5px solid;
       border-bottom: 5px solid;
     }
+
+    .carousel-cell {
+      width: 50%;
+    }
+  
     .hide {
       display: initial;
     }
@@ -669,16 +682,38 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+      font-size: 1.3rem;
     }
+
+    .footer-info {
+      text-align: left;
+      line-height: 30px;
+    }
+
     .social-container {
-      width: 15%;
+      width: 30%;
+      line-height: 45px;
       flex-direction: column;
       align-items: flex-start;
+      padding: 0;
+      font-family: 'raleway', sans-serif;
     }
+
+    .hide {
+      padding-left: 1rem;
+    }
+
+
 
   }
 
   @media screen and (min-width: 1240px) {
+    
+    .banner {
+      background-size: auto, auto 93%, contain;
+      background-repeat: repeat, no-repeat, repeat;
+    }
+    
     .nav-container {
       flex-wrap: nowrap;
     }
