@@ -242,7 +242,7 @@
     padding: 4% 3%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-self: center;
   }
 
@@ -589,6 +589,7 @@
       padding-bottom: 0;
       width: 45%;
       margin-top: 0;
+      margin-right: 5rem;
     }
     .logo {
       height: 60px;
@@ -707,27 +708,40 @@
 
   }
 
-  @media screen and (min-width: 1240px) {
+  @media screen and (min-width: 1024px) {
     
     .banner {
-      background-size: auto, auto 93%, contain;
+      background-size: auto, auto 115%, contain;
       background-repeat: repeat, no-repeat, repeat;
+      background-position: center, center 55px, center;
+      height: 42rem;
     }
-    
+    header {
+      padding: 1.5% 4%;
+    }
     .nav-container {
       flex-wrap: nowrap;
     }
+    .cart {
+      height: 80px;
+    }
     .new {
-        top: 246px;
+        top: 265px;
         font-size: 183%;
       }
       .season {
         top: 269px;
-        font-size: 435%;
+        font-size: 500%;
       }
     .logo {
-      height: 70px;
+      height: 80px;
     }
+    .banner2 {
+      padding: 5rem 12rem;
+    }
+    ul.item-container {
+      font-size: 2.5rem;
+  }
   .mens{
     height: 25vw;
   }
@@ -746,10 +760,28 @@
   .womens {
     height: 25vw;
   }
+  h2{
+    margin: 5.5rem 0;
+  }
+  .carousel-cell {
+    width: 25%;
+  }
+  .emailsection {
+    background-size: 110%;
+  }
+  .signup {
+    font-size: 3.5rem;
+    padding-top: 5rem;
+  }
+  .stayupdated {
+    font-size: 1.3rem;
+    padding-left: 21rem;
+    padding-right: 21rem;
+  }
     footer {
       display: flex;
       justify-content: space-between;
-      padding: 2rem;
+      padding: 5rem 3.5rem;
     }
     .social-container {
       display: flex;
@@ -757,5 +789,6 @@
       text-align: left;
       flex-wrap: wrap;
       padding: 0;
+      width: 15%;
     }
   }
